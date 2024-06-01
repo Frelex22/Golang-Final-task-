@@ -1,0 +1,13 @@
+version: '3'
+services:
+  orchestrator:
+    build: ./orchestrator
+    ports:
+      - "8080:8080"
+
+  agent:
+    build: ./agent
+    depends_on:
+      - orchestrator
+    environment:
+      - ORCHESTRATOR_URL=http://orchestrator:8080

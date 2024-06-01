@@ -1,0 +1,12 @@
+awesomeProject3/
+│
+├── orchestrator/
+│   ├── main.go
+│   ├── Dockerfile
+│
+├── agent/
+│   ├── main.go
+│   ├── Dockerfile
+│
+├── docker-compose.yml
+├── README.md
